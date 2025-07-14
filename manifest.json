@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "고창국 전용 크롬 단축키",
+  "version": "1.0",
+  "description": "탭 이동만 있음.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "commands": {
+    "previous-tab": {
+      "suggested_key": {
+        "mac": "Command+1"
+      },
+      "description": "이전 탭으로 이동"
+    },
+    "next-tab": {
+      "suggested_key": {
+        "mac": "Command+2"
+      },
+      "description": "다음 탭으로 이동"
+    }
+  }
+}
